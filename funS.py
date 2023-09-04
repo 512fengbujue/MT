@@ -186,6 +186,7 @@ def main():
     for i in range(rowtest):
         for j in range(coltest):
             result_zuhefuquan[i]=datatest1[i,j]*quanzhong[j]+result_zuhefuquan[i]
+    np.savetxt('result.csv',result_zuhefuquan,delimiter=',')
     print(result_zuhefuquan)#测试数据的评估结果
 if __name__ == '__main__':
     main()
